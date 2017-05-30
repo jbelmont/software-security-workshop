@@ -1,11 +1,12 @@
 package main
 
 import (
-	"net/http/httptest"
 	"testing"
 )
 
-func TestHandler(t *testing.T) {
-	server := httptest.NewServer(handler)
-	defer server.Close()
+func TestGetRouter(t *testing.T) {
+	router := getRouter()
+	if router == nil {
+		t.Errorf("router should not be nil")
+	}
 }

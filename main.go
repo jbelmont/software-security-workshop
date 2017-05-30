@@ -1,15 +1,19 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"net/http"
+
+	"github.com/Code-Craftsmanship-Saturdays/software-security/routes"
+	"github.com/gorilla/mux"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hello Software %s!", r.URL.Path[1:])
+func getRouter() *mux.Router {
+	return routes.NewRouter()
 }
 
 func main() {
-	http.HandleFunc("/", handler)
-    http.ListenAndServe(":3000", nil)
+	router := getRouter()
+
+	log.Fatal(http.ListenAndServe(":8080", router))
 }
