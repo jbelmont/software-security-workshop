@@ -1,0 +1,7 @@
+node_modules/**
+dist/static/**
+handlers/*
+model/*
+routes/*
+scripts/*
+_book/**

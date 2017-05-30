@@ -1,0 +1,1 @@
+{"version":3,"sources":["../css/header.css"],"names":[],"mappings":"AAAA;EACE,cAAc;CACf;;AAED;EACE,WAAW;CACZ","file":"security.css","sourcesContent":["#stuff {\n  display: none;\n}\n\n.main {\n  color: red;\n}\n"]}
