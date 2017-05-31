@@ -40,14 +40,15 @@ func NewRouter() *mux.Router {
 	for _, route := range routes {
 		if route.Name == "Index" {
 			router.PathPrefix("/").Handler(http.StripPrefix("/", http.FileServer(http.Dir("static/"))))
+			continue
 		} else {
-			router.PathPrefix("/api/v1")
+			router.
+				PathPrefix("/api/v1/").
+				Methods(route.Method).
+				Path(route.Pattern).
+				Name(route.Name).
+				Handler(route.HandlerFunc)
 		}
-		router.
-			Methods(route.Method).
-			Path(route.Pattern).
-			Name(route.Name).
-			Handler(route.HandlerFunc)
 	}
 
 	return router
@@ -56,14 +57,14 @@ func NewRouter() *mux.Router {
 var routes = Routes{
 	Route{
 		"GET",
+		"/users",
+		"Users",
+		handlers.GetUsers,
+	},
+	Route{
+		"GET",
 		"/",
 		"Index",
 		handlers.UsersIndex,
-	},
-	Route{
-		"Get",
-		"/api/v1/users",
-		"Users",
-		handlers.GetUsers,
 	},
 }
