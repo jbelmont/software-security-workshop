@@ -1,6 +1,6 @@
 'use strict'
 
-const users = require('users')
+const users = JSON.parse(window.localStorage.getItem('users'))
 const {
   DASHBOARD,
   USERS,
@@ -26,8 +26,7 @@ function buildTable () {
         <td>${EMAIL}</td>
       </tr>
     </thead>
-    <tbody id="usersTable">
-    </tbody>
+    <tbody id="usersTable"></tbody>
   </table>
 </div>`
   const usersContainer = document.querySelector('.users-container')
@@ -87,15 +86,15 @@ function buildUsers () {
   for (let i = 0; i < users.length; i++) {
     const tr = document.createElement('tr')
     const id = document.createElement('td')
-    id.textContent = users[i].id
+    id.textContent = users[i].ID
     const firstName = document.createElement('td')
-    firstName.textContent = users[i].first_name
+    firstName.textContent = users[i].FirstName
     const lastName = document.createElement('td')
-    lastName.textContent = users[i].last_name
+    lastName.textContent = users[i].LastName
     const gender = document.createElement('td')
-    gender.textContent = users[i].gender
+    gender.textContent = users[i].Gender
     const email = document.createElement('td')
-    email.textContent = users[i].email
+    email.textContent = users[i].Email
     tr.appendChild(id)
     tr.appendChild(firstName)
     tr.appendChild(lastName)

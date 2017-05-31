@@ -1,5 +1,12 @@
 'use strict'
 
+const {
+  buildTable,
+  buildNavigation,
+  addUserForm,
+  buildUsers
+} = require('./buildPage')
+
 function toggleForm () {
   document.getElementById('addUserForm').classList.toggle('hide')
 }
@@ -62,14 +69,27 @@ function addNewUser (users) {
   window.localStorage.setItem('users:table', JSON.stringify(usersStorage))
 }
 
-document.getElementById('addUserBtn').addEventListener('click', e => {
-  prepareForm()
-})
+function setUpPage () {
+  buildTable()
+  buildNavigation()
+  addUserForm()
+  buildUsers()
+}
 
-document.getElementById('addUserFieldBtn').addEventListener('click', e => {
-  e.preventDefault()
-  e.stopPropagation()
-  const newUser = getUserFields()
-  addNewUser(newUser)
-  prepareForm()
-})
+document.addEventListener('DOMContentLoaded', () => {
+  require('./users')().then(users => {
+    window.localStorage.setItem('users', JSON.stringify(users))
+    setUpPage()
+    document.getElementById('addUserBtn').addEventListener('click', e => {
+      prepareForm()
+    })
+
+    document.getElementById('addUserFieldBtn').addEventListener('click', e => {
+      e.preventDefault()
+      e.stopPropagation()
+      const newUser = getUserFields()
+      addNewUser(newUser)
+      prepareForm()
+    })
+  })
+}, false)
