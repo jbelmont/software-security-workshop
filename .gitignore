@@ -19,5 +19,5 @@
 # Gitbook Generated Files
 /_book
 
-# Remove dist folder
-/dist
+# Remove build directory
+/static/build/*

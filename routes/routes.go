@@ -11,9 +11,9 @@ import (
 )
 
 type Route struct {
-	Name        string
 	Method      string
 	Pattern     string
+	Name        string
 	HandlerFunc http.HandlerFunc
 }
 
@@ -38,6 +38,11 @@ func NewRouter() *mux.Router {
 
 	router := mux.NewRouter().StrictSlash(true)
 	for _, route := range routes {
+		if route.Name == "Index" {
+			router.PathPrefix("/").Handler(http.StripPrefix("/", http.FileServer(http.Dir("static/"))))
+		} else {
+			router.PathPrefix("/api/v1")
+		}
 		router.
 			Methods(route.Method).
 			Path(route.Pattern).
@@ -50,9 +55,15 @@ func NewRouter() *mux.Router {
 
 var routes = Routes{
 	Route{
-		"Index",
 		"GET",
 		"/",
+		"Index",
 		handlers.UsersIndex,
+	},
+	Route{
+		"Get",
+		"/api/v1/users",
+		"Users",
+		handlers.GetUsers,
 	},
 }

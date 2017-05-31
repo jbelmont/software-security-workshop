@@ -34,7 +34,7 @@ function buildTable () {
   usersContainer.innerHTML = addUserForm
 }
 
-function addUser () {
+function addUserForm () {
   const addUserComponent = `
   <button id="addUserBtn" class="btn btn-default add-user-btn">Add User</button>
     <form id="addUserForm" class="hide">
@@ -82,7 +82,6 @@ function buildNavigation () {
   navComponent.innerHTML = navigationComponent
 }
 
-
 function buildUsers () {
   const usersTable = document.getElementById('usersTable')
   for (let i = 0; i < users.length; i++) {
@@ -109,7 +108,7 @@ function buildUsers () {
 
 module.exports = {
   buildTable,
-  addUser,
+  addUserForm,
   buildNavigation,
   buildUsers
 }

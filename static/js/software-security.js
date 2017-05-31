@@ -32,33 +32,34 @@ function addNewUser (users) {
     gender,
     email
   } = users
-  const users = JSON.parse(window.localStorage.getItem('users:table'))
+  const usersStorage = JSON.parse(window.localStorage.getItem('users:table'))
   const nextUserId = users[`${users.length}+1`]
   const tr = document.createElement('tr')
   const id = document.createElement('td')
   id.textContent = nextUserId
-  const firstName = document.createElement('td')
-  firstName.textContent = firstName
-  const lastName = document.createElement('td')
-  lastName.textContent = lastName
-  const gender = document.createElement('td')
-  gender.textContent = gender
-  const email = document.createElement('td')
-  email.textContent = email
+  const fName = document.createElement('td')
+  fName.textContent = firstName
+  const lName = document.createElement('td')
+  lName.textContent = lastName
+  const gnd = document.createElement('td')
+  gnd.textContent = gender
+  const eml = document.createElement('td')
+  eml.textContent = email
   tr.appendChild(id)
-  tr.appendChild(firstName)
-  tr.appendChild(lastName)
-  tr.appendChild(gender)
-  tr.appendChild(email)
+  tr.appendChild(fName)
+  tr.appendChild(lName)
+  tr.appendChild(gnd)
+  tr.appendChild(eml)
+  const usersTable = document.getElementById('usersTable')
   usersTable.appendChild(tr)
-  users.push({
+  usersStorage.push({
     id: nextUserId,
-    first_name: first_name,
-    last_name: last_name,
-    email: email,
-    gender: gender
+    first_name: fName,
+    last_name: lName,
+    email: eml,
+    gender: gnd
   })
-  window.localStorage.setItem('users:table', JSON.stringify(users))
+  window.localStorage.setItem('users:table', JSON.stringify(usersStorage))
 }
 
 document.getElementById('addUserBtn').addEventListener('click', e => {
