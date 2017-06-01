@@ -11,6 +11,9 @@
     "lint:fix": "eslint --fix --ext .js .",
     "postcss": "postcss --dir static/**/*.css -o static/build/security.css -ms",
     "browserify": "browserify static/js/*.js -o static/build/bundle.js -t [ babelify --presets [ es2015 ] ]",
+    "go": "go run main.go",
+    "browser": "node browser.js",
+    "dev": "npm run go & npm run browser",
     "docs:prepare": "gitbook install",
     "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build",
     "docs:watch": "npm run docs:prepare && gitbook serve",
@@ -38,6 +41,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "gitbook": "^3.2.2",
     "gitbook-cli": "^2.3.0",
+    "opn": "^5.0.0",
     "postcss-cli": "^4.0.0",
     "sinon": "^2.3.2"
   },

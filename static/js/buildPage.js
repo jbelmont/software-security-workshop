@@ -86,15 +86,15 @@ function buildUsers () {
   for (let i = 0; i < users.length; i++) {
     const tr = document.createElement('tr')
     const id = document.createElement('td')
-    id.textContent = users[i].ID
+    id.textContent = users[i].id
     const firstName = document.createElement('td')
-    firstName.textContent = users[i].FirstName
+    firstName.textContent = users[i].first_name
     const lastName = document.createElement('td')
-    lastName.textContent = users[i].LastName
+    lastName.textContent = users[i].last_name
     const gender = document.createElement('td')
-    gender.textContent = users[i].Gender
+    gender.textContent = users[i].gender
     const email = document.createElement('td')
-    email.textContent = users[i].Email
+    email.textContent = users[i].email
     tr.appendChild(id)
     tr.appendChild(firstName)
     tr.appendChild(lastName)

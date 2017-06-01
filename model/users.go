@@ -6,11 +6,11 @@ import (
 
 // Users Struct is the model for the app
 type Users struct {
-	ID        int
-	FirstName string
-	LastName  string
-	Email     string
-	Gender    string
+	ID        int    `json:"id"`
+	FirstName string `json:"first_name"`
+	LastName  string `json:"last_name"`
+	Email     string `json:"email"`
+	Gender    string `json:"gender"`
 }
 
 var users = []Users{
