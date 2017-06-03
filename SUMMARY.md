@@ -2,7 +2,7 @@
 
 * [README](README.md)
 * [Software Security](docs/software-security.md)
-* [Language Level Security](docs/language-level-security.md)
+* [Language-Based Security](docs/language-based-security.md)
 * [Application Level Security](docs/application-level-security.md)
 * [OWASP Top 10](docs/owasp.md)
     * [Injection](docs/injection.md)
