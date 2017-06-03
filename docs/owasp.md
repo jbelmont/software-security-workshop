@@ -70,3 +70,25 @@ OWASP Top 10 Most Critical Web Application Security Risks (in the Release Candid
 * Underprotected APIs (NEW)
 
 [OWASP Top 10 2017 Release Candidate](https://github.com/OWASP/Top10/raw/master/2017/OWASP%20Top%2010%20-%202017%20RC1-English.pdf)
+
+## OWASP Top 10 comparsion table for 2013 vs 2017
+
+| `OWASP Top 10 – 2013 (Previous)` | `OWASP Top 10 – 2017 (New)` |
+| --- | --- |
+| A1 - Injection | A1 - Injection |
+| A2 - Broken Authentication and Session Management | A2 - Broken Authentication and Session Management |
+| A3 - Cross-Site Scripting (XSS) | A3 - Cross-Site Scripting (XSS) |
+| A4 - Insecure Direct Object References - Merged with A7 | A4 - Broken Access Control (Original category in 2003/2004) |
+| A5 - Security Misconfiguration | A5 - Security Misconfiguration |
+| A6 - Sensitive Data Exposure | A6 - Sensitive Data Exposure |
+| A7 - Missing Function Level Access Control - Merged with A4 | A7 – Insufficient Attack Protection (NEW) |
+| A8 – Cross-Site Request Forgery (CSRF) | A8 – Cross-Site Request Forgery (CSRF) |
+| A9 – Using Components with Known Vulnerabilities | A9 – Using Components with Known Vulnerabilities |
+| A10 – Unvalidated Redirects and Forwards -Dropped | A10 – UnderprotectedAPIs (NEW)Release NotesRN |
+
+
+| `Threat Agents` | `Attack Vectors` | `Weakness Prevalence` | `Weakness Detectability` | `Technical Impacts` | `Business Impacts` |
+| --- | --- | --- | --- | --- | --- |
+| App Specific | Easy | Widespread | Easy | Severe | App/Business Specific |
+| App Specific | Average | Common | Average | Moderate | App/Business Specific |
+| App Specific | Difficult | Uncommon | Difficult | Minor | App/Business Specific |

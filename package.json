@@ -41,6 +41,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "gitbook": "^3.2.2",
     "gitbook-cli": "^2.3.0",
+    "gitbook-plugin-flowchart": "^1.1.0",
     "opn": "^5.0.0",
     "postcss-cli": "^4.0.0",
     "sinon": "^2.3.2"
