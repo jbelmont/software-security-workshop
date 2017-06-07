@@ -15,4 +15,4 @@
     * [Cross-Site Request Forgery](docs/cross-site-request-forgery.md)
     * [Using Components with Known Vulnerabilities](docs/using-components-with-known-vulnerabilities.md)
     * [Underprotected APIs](docs/underprotected-apis.md)
-* [Next Steps for Developers](docs/next-steps-for-developers.md)
+* [Application Demo](docs/application_demo.md)

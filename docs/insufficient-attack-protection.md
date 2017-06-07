@@ -19,14 +19,39 @@ st(right)->op1(right)->op2(right)->op3(right)->op4(right)
 
 ## Detecting Vulnerability
 
-
+* Detecting, responding to, and blocking attacks makes applications dramatically harder to exploit yet almost no applications or APIs have such protection.
+* Critical vulnerabilities in both custom code and components are also discovered all the time, yet organizations frequently take weeks or even months to roll out new defenses.
+* It should be very obvious if attack detection and response isn’t in place.
+* Simply try manual attacks or run a scanner against the application.
+* The application or API should identify the attacks, block any viable attacks, and provide details on the attacker and characteristics of the attack.
+* If you can’t quickly roll out virtual and/or actual patches when a critical vulnerability is discovered, you are left exposed to attack.
+* Be sure to understand what types of attacks are covered by attack protection.
+* Is it only XSS and SQL Injection? You can use technologies like WAFs, RASP, and OWASP AppSensorto detect or block attacks, and/or virtually patch vulnerabilities
 
 ## Preventing Vulnerability
 
+There are three primary goals for sufficient attack protection:
 
+1. Detect Attacks. Did something occur that is impossible for legitimate users to cause (e.g., an input a legitimate client can’t generate)?
+    1. Is the application being used in a way that an ordinary user would never do (e.g., tempo too high, atypical input, unusual usage patterns, repeated requests)?
+2. Respond to Attacks. Logs and notifications are critical to timely response.
+    1. Decide whether to automatically block requests, IP addresses, or IP ranges.
+    2. Consider disabling or monitoring misbehaving user accounts.
+3. Patch Quickly. If your dev process can’t push out critical patches in a day, deploy a virtual patchthat analyzes HTTP traffic, data flow, and/or code execution and prevents vulnerabilities from being exploited.
 
-## Example Attach Scenarios
+## Example Attack Scenarios
 
+1. Attacker uses automated tool like [OWASP ZAP](https://www.owasp.org/index.php/ZAP) or [SQLMap](http://sqlmap.org/) to detect vulnerabilities and possibly exploit them.
+    1. Attack detection should recognize the application is being targeted with unusual requests and high volume.
+    2. Automated scans should be easy to distinguish from normal traffic.
+2. A skilled human attacker carefully probes for potential vulnerabilities, eventually finding an obscure flaw.
+    1. While more difficult to detect, this attack still involves requests that a normal user would never send, such as input not allowed by the UI.
+    2. Tracking this attacker may require building a case over time that demonstrates malicious intent.
+3. Attacker starts exploiting a vulnerability in your application that your current attack protection fails to block.
+    1. How quickly can you deploy a real or virtual patch to block continued exploitation of this vulnerability?
 
 ## References
 
+[Intrusion Detection](https://www.owasp.org/index.php/Intrusion_Detection)
+
+[Credential Stuffing Prevention Cheat Sheet](https://www.owasp.org/index.php/Credential_Stuffing_Prevention_Cheat_Sheet)

@@ -19,13 +19,53 @@ st(right)->op1(right)->op2(right)->op3(right)->op4(right)
 
 ## Detecting Vulnerability
 
-
+* The best way to find out if an application is vulnerable to injection is to verify that all use of interpreters clearly separates untrusted data from the command or query.
+* In many cases, it is recommended to avoid the interpreter, or disable it (e.g., XXE), if possible.
+* For SQL calls, use bind variables in all prepared statements and stored procedures, or avoid dynamic queries.
+* Checking the code is a fast and accurate way to see if the application uses interpreters safely.
+* Code analysis tools can help a security analyst find use of interpreters and trace data flow through the application.
+* Penetration testers can validate these issues by crafting exploits that confirm the vulnerability.
+* Automated dynamic scanning which exercises the application may provide insight into whether some exploitable injection flaws exist.
+* Scanners cannot always reach interpreters and have difficulty detecting whether an attack was successful.
+* Poor error handling makes injection flaws easier to discover.
 
 ## Preventing Vulnerability
 
+Keep untrusted data separate from commands and queries.
 
+1. The preferred option is to use a safe API which avoids the use of the interpreter (Specific Language Interpreter I presume) entirely or provides a parameterized interface.
+    1. Be careful with APIs, such as stored procedures, that are parameterized, but can still introduce injection under the hood.
+2. If a parameterized API is not available, you should carefully escape special characters using the specific escape syntax for that interpreter.
+3. Positive or "white list" input validation is also recommended, but is not a complete defense as many situations require special characters be allowed. Recommend to resort to step 1 and 2 in this case
 
-## Example Attach Scenarios
+## Example Attack Scenarios
 
+1. An application uses untrusted data in the construction of the following vulnerable SQL call:
+
+`String query = "SELECT * FROM accounts WHERE custID = '" + request.getParameter("id") + "'";`
+
+2. Similarly, an application’s blind trust in frameworks may result in queries that are still vulnerable
+
+`Query HQLQuery = session.createQuery("FROM accounts WHERE custID='" + request.getParameter("id") + "'");`
+
+In both cases, the attacker modifies the 'id' parameter value in her browser to send:  ' or '1'='1.
+
+`http://example.com/app/accountView?id='or '1'='1`
+
+This changes the meaning of both queries to return all the records from the accounts table.
+More dangerous attacks could modify data or even invoke stored procedures.
+
+## Injection Demo
+
+[Injection Demo](https://www.codebashing.com/sql_demo)
 
 ## References
+
+[SQL Injection Cheat Sheet](https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet)
+
+[Query Parameterization Cheat Sheet](https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet)
+
+[Command Injection](https://www.owasp.org/index.php/Command_Injection)
+
+[Testing for SQL Injection](https://www.owasp.org/index.php/Testing_for_SQL_Injection_(OTG-INPVAL-005))
+
