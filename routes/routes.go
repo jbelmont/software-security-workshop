@@ -7,7 +7,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/Code-Craftsmanship-Saturdays/software-security/handlers"
+	"github.com/jbelmont/software-security/handlers"
 )
 
 type Route struct {

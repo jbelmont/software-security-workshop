@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/Code-Craftsmanship-Saturdays/software-security/routes"
 	"github.com/gorilla/mux"
+	"github.com/jbelmont/software-security/routes"
 )
 
 func getRouter() *mux.Router {

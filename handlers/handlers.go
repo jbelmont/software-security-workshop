@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/Code-Craftsmanship-Saturdays/software-security/model"
+	"github.com/jbelmont/software-security/model"
 )
 
 func UsersIndex(w http.ResponseWriter, r *http.Request) {
