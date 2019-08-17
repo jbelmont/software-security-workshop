@@ -1,0 +1,509 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Using Components with Known Vulnerabilities · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="underprotected-apis.html" />
+    
+    
+    <link rel="prev" href="cross-site-request-forgery.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="software-security.html">
+            
+                <a href="software-security.html">
+            
+                    
+                    Software Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="language-based-security.html">
+            
+                <a href="language-based-security.html">
+            
+                    
+                    Language-Based Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="application-level-security.html">
+            
+                <a href="application-level-security.html">
+            
+                    
+                    Application Level Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="owasp.html">
+            
+                <a href="owasp.html">
+            
+                    
+                    OWASP Top 10
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="injection.html">
+            
+                <a href="injection.html">
+            
+                    
+                    Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="broken-authentication-and-session-management.html">
+            
+                <a href="broken-authentication-and-session-management.html">
+            
+                    
+                    Broken Authentication and Session Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="cross-site-scripting.html">
+            
+                <a href="cross-site-scripting.html">
+            
+                    
+                    Cross-Site Scripting (XSS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="broken-access-control.html">
+            
+                <a href="broken-access-control.html">
+            
+                    
+                    Broken Access Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="security-misconfiguration.html">
+            
+                <a href="security-misconfiguration.html">
+            
+                    
+                    Security Misconfiguration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="sensitive-data-exposure.html">
+            
+                <a href="sensitive-data-exposure.html">
+            
+                    
+                    Sensitive Data Exposure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="insufficient-attack-protection.html">
+            
+                <a href="insufficient-attack-protection.html">
+            
+                    
+                    Insufficient Attack Protection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="cross-site-request-forgery.html">
+            
+                <a href="cross-site-request-forgery.html">
+            
+                    
+                    Cross-Site Request Forgery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.9" data-path="using-components-with-known-vulnerabilities.html">
+            
+                <a href="using-components-with-known-vulnerabilities.html">
+            
+                    
+                    Using Components with Known Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="underprotected-apis.html">
+            
+                <a href="underprotected-apis.html">
+            
+                    
+                    Underprotected APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="application_demo.html">
+            
+                <a href="application_demo.html">
+            
+                    
+                    Application Demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Using Components with Known Vulnerabilities</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="using-components-with-known-vulnerabilities">Using Components with Known Vulnerabilities</h1>
+<blockquote>
+<p>Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.</p>
+</blockquote>
+<p><div xmlns="http://www.w3.org/1999/xhtml" class="flowchart"><svg height="35.72947681837516px" version="1.1" width="750px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 936.7265625 44.625" preserveaspectratio="xMidYMid meet" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Rapha&#xEB;l 2.1.4</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><marker id="raphael-marker-endblock33-obj10" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj11" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj12" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj13" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker></defs><a xlink:href="https://en.wikipedia.org/wiki/Threat_(computer)" xmlns:xlink="http://www.w3.org/1999/xlink" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><rect x="0" y="0" width="107.84375" height="35.625" rx="20" ry="20" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="st" transform="matrix(1,0,0,1,29.3359,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></a><a xlink:href="https://en.wikipedia.org/wiki/Threat_(computer)" xmlns:xlink="http://www.w3.org/1999/xlink" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="stt" class="flowchartt" transform="matrix(1,0,0,1,29.3359,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Threat Agents</tspan></text></a><rect x="0" y="0" width="110.15625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op1" transform="matrix(1,0,0,1,215.3594,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op1t" class="flowchartt" transform="matrix(1,0,0,1,215.3594,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack Vectors</tspan></text><rect x="0" y="0" width="154.515625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op2" transform="matrix(1,0,0,1,381.5156,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op2t" class="flowchartt" transform="matrix(1,0,0,1,381.5156,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Security Weaknesses</tspan></text><rect x="0" y="0" width="132.734375" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op3" transform="matrix(1,0,0,1,602.9219,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op3t" class="flowchartt" transform="matrix(1,0,0,1,602.9219,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Technical Impacts</tspan></text><rect x="0" y="0" width="129.625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op4" transform="matrix(1,0,0,1,804.1016,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op4t" class="flowchartt" transform="matrix(1,0,0,1,804.1016,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Business Impacts</tspan></text><path fill="none" stroke="#000000" d="M137.1796875,23.8125C137.1796875,23.8125,194.23051120294258,23.8125,210.86104916713043,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj10)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M325.515625,23.8125C325.515625,23.8125,363.71639585494995,23.8125,377.01578531763516,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj11)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M536.03125,23.8125C536.03125,23.8125,583.4314170479774,23.8125,598.4291261530016,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj12)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M735.65625,23.8125C735.65625,23.8125,784.383430480957,23.8125,799.6106743812561,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj13)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></svg></div></p>
+<table>
+<thead>
+<tr>
+<th>Threat Agents </th><td>Attack Vectors</td><td colspan="2">Security Weakness</td><td>Technical Impacts</td><td>Business Impacts</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application Specific</td>
+<td>Exploitability =&gt; Easy</td>
+<td>Prevalence =&gt; Common</td>
+<td>Detectability =&gt; Average</td>
+<td>Impact =&gt; Severe</td>
+<td>App/Business Specific</td>
+</tr>
+<tr>
+<td>Some vulnerable components (e.g., framework libraries) can be identified and exploited with automated tools, expanding the threat agent pool beyond targeted attackers to include chaotic actors.</td>
+<td>Attackers identify a weak component through scanning or manual analysis. They customize the exploit as needed and execute the attack. It gets more difficult if the used component is deep in the application. </td><td colspan="2">Many applications and APIs have these issues because their development teams don&#x2019;t focus on ensuring their components and libraries are up to date. In some cases, the developers don&#x2019;t even know all the components they are using, never mind their versions. Component dependencies make things even worse. Tools are becoming commonly available to help detect components with known vulnerabilities.</td> <td>The full range of weaknesses is possible, including injection, broken access control, XSS, etc. The impact could range from minimalto complete host takeover and data compromise.</td><td>Consider what each vulnerability might mean for the business controlled by the affected application. It could be trivial or it could mean complete compromise.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detecting-vulnerability">Detecting Vulnerability</h2>
+<ul>
+<li>The challenge is to continuously monitor the components (both client-side and server-side) you are using for new vulnerability reports.<ul>
+<li>This monitoring can be very difficult because vulnerability reports are not standardized</li>
+<li>making them hard to find and search for the details you need</li>
+<li>(e.g., the exact component in a product family that has the vulnerability.</li>
+<li>Worst of all, many vulnerabilities never get reported to central clearinghouses like <a href="http://cve.mitre.org/" target="_blank">CVE</a> and <a href="https://nvd.nist.gov/home" target="_blank">NVD</a>.</li>
+<li>Node.js has <a href="https://github.com/Snyk/" target="_blank">Snyk</a></li>
+</ul>
+</li>
+<li>Determining if you are vulnerable requires searching these databases, as well as keeping abreast of project mailing lists and announcements for anything that might be a vulnerability.<ul>
+<li>This process can be done manually, or with automated tools.</li>
+<li>If a vulnerability in a component is discovered, carefully evaluate whether you are actually vulnerable.</li>
+<li>Check to see if your code uses the vulnerable part of the component and whether the flaw could result in an impact you care about.</li>
+<li>Both checks can be difficult to perform as vulnerability reports can be deliberately vague.</li>
+</ul>
+</li>
+</ul>
+<h2 id="preventing-vulnerability">Preventing Vulnerability</h2>
+<ul>
+<li>Most component projects do not create vulnerability patches for old versions.<ul>
+<li>So the only way to fix the problem is to upgrade to the next version, which can require other code changes.</li>
+<li>Software projects should have a process in place to:<ul>
+<li>Continuously inventory the versions of both client-side and server-side components and their dependencies using tools like versions, DependencyCheck, retire.js, etc.</li>
+<li>Continuously monitor sources like NVD for vulnerabilities in your components.</li>
+<li>Use software composition analysis tools to automate the process.</li>
+</ul>
+</li>
+<li>Analyze libraries to be sure they are actually invoked at runtime before making changes, as the majority of components are never loaded or invoked.</li>
+<li>Decide whether to upgrade component (and rewrite application to match if needed) or deploy a virtual patch that analyzes HTTP traffic, data flow, or code execution and prevents vulnerabilities from being exploited</li>
+</ul>
+</li>
+</ul>
+<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
+<ul>
+<li>Components almost always run with the full privilege of the application, so flaws in any component can result in serious impact.</li>
+<li>Such flaws can be accidental (e.g., coding error) or intentional (e.g., backdoor in component).</li>
+<li>Some example exploitable component vulnerabilities discovered are:<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3451" target="_blank">Apache CXF Authentication Bypass</a></li>
+<li>By failing to provide an identity token, attackers could invoke any web service with full permission.</li>
+<li>(Apache CXF is a services framework, not to be confused with the Apache Application Server.)</li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-5638" target="_blank">Struts 2 Remote Code Execution</a><ul>
+<li>Sending an attack in the Content-Type header causes the content of that header to be evaluated as an OGNL expression, which enables execution of arbitrary code on the server.</li>
+</ul>
+</li>
+<li>Applications using a vulnerable version of either component are susceptible to attack as both components are directly accessible by application users.</li>
+<li>Other vulnerable libraries, used deeper in an application, may be harder to exploit.</li>
+</ul>
+</li>
+</ul>
+<h2 id="references">References</h2>
+<p><a href="https://www.owasp.org/index.php/OWASP_Dependency_Check" target="_blank">OWASP Dependency Check</a></p>
+<p><a href="https://www.owasp.org/index.php/Virtual_Patching_Best_Practices" target="_blank">Virtual Patching Best Practices</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cross-site-request-forgery.html" class="navigation navigation-prev " aria-label="Previous page: Cross-Site Request Forgery">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="underprotected-apis.html" class="navigation navigation-next " aria-label="Next page: Underprotected APIs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Using Components with Known Vulnerabilities","level":"1.5.9","depth":2,"next":{"title":"Underprotected APIs","level":"1.5.10","depth":2,"path":"docs/underprotected-apis.md","ref":"docs/underprotected-apis.md","articles":[]},"previous":{"title":"Cross-Site Request Forgery","level":"1.5.8","depth":2,"path":"docs/cross-site-request-forgery.md","ref":"docs/cross-site-request-forgery.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["flowchart"],"pluginsConfig":{"flowchart":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/using-components-with-known-vulnerabilities.md","mtime":"2019-08-17T18:12:52.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-17T18:17:29.051Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

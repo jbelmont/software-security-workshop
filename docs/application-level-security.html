@@ -1,0 +1,532 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Application Level Security · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="owasp.html" />
+    
+    
+    <link rel="prev" href="language-based-security.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="software-security.html">
+            
+                <a href="software-security.html">
+            
+                    
+                    Software Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="language-based-security.html">
+            
+                <a href="language-based-security.html">
+            
+                    
+                    Language-Based Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="application-level-security.html">
+            
+                <a href="application-level-security.html">
+            
+                    
+                    Application Level Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="owasp.html">
+            
+                <a href="owasp.html">
+            
+                    
+                    OWASP Top 10
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="injection.html">
+            
+                <a href="injection.html">
+            
+                    
+                    Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="broken-authentication-and-session-management.html">
+            
+                <a href="broken-authentication-and-session-management.html">
+            
+                    
+                    Broken Authentication and Session Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="cross-site-scripting.html">
+            
+                <a href="cross-site-scripting.html">
+            
+                    
+                    Cross-Site Scripting (XSS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="broken-access-control.html">
+            
+                <a href="broken-access-control.html">
+            
+                    
+                    Broken Access Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="security-misconfiguration.html">
+            
+                <a href="security-misconfiguration.html">
+            
+                    
+                    Security Misconfiguration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="sensitive-data-exposure.html">
+            
+                <a href="sensitive-data-exposure.html">
+            
+                    
+                    Sensitive Data Exposure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="insufficient-attack-protection.html">
+            
+                <a href="insufficient-attack-protection.html">
+            
+                    
+                    Insufficient Attack Protection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="cross-site-request-forgery.html">
+            
+                <a href="cross-site-request-forgery.html">
+            
+                    
+                    Cross-Site Request Forgery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="using-components-with-known-vulnerabilities.html">
+            
+                <a href="using-components-with-known-vulnerabilities.html">
+            
+                    
+                    Using Components with Known Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="underprotected-apis.html">
+            
+                <a href="underprotected-apis.html">
+            
+                    
+                    Underprotected APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="application_demo.html">
+            
+                <a href="application_demo.html">
+            
+                    
+                    Application Demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Application Level Security</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="application-level-security">Application Level Security</h1>
+<h2 id="definition">Definition</h2>
+<ul>
+<li>Encompasses measures taken to improve the security of an application<ul>
+<li>By finding, fixing and preventing security vulnerabilities.</li>
+</ul>
+</li>
+</ul>
+<h2 id="terms">Terms</h2>
+<ul>
+<li>Asset<ul>
+<li>Data in a database, money in an account, file on the filesystem or any system resource.</li>
+</ul>
+</li>
+<li>Vulnerability<ul>
+<li>A gap in security program that can be exploited by threats to gain unauthorized access to an asset.</li>
+</ul>
+</li>
+<li>Attack<ul>
+<li>An action taken to harm an asset.</li>
+</ul>
+</li>
+<li>Threat<ul>
+<li>Anything that can exploit a vulnerability and obtain, damage, or destroy an asset.</li>
+</ul>
+</li>
+</ul>
+<h2 id="techniques">Techniques</h2>
+<ul>
+<li>Code review<ul>
+<li>Security engineer who understands the application through manually reviewing the source code notices avenues of exploit.</li>
+</ul>
+</li>
+<li>Blackbox security audit<ul>
+<li>This is testing an application for security vulnerabilities not looking at source code</li>
+</ul>
+</li>
+<li>Design review<ul>
+<li>Thinking about possible threat models before writing code or using a spec that has it detailed.</li>
+</ul>
+</li>
+<li>Tooling<ul>
+<li>Automated tools that check security vulnerabilities</li>
+</ul>
+</li>
+</ul>
+<h2 id="application-threats-or-attacks">Application threats or attacks</h2>
+<table>
+<thead>
+<tr>
+<th><code>Category</code></th>
+<th><code>Threats / Attacks</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Input Validation</em></td>
+<td>Buffer overflow; cross-site scripting; SQL injection; canonicalization</td>
+</tr>
+<tr>
+<td><em>Software Tampering</em></td>
+<td>Attacker modifies an existing application&apos;s runtime behavior to perform unauthorized actions; exploited via binary patching, code substitution, or code extension</td>
+</tr>
+<tr>
+<td><em>Authentication</em></td>
+<td>Network eavesdropping ; Brute force attack; dictionary attacks; cookie replay; credential theft</td>
+</tr>
+<tr>
+<td><em>Authorization</em></td>
+<td>Elevation of privilege; disclosure of confidential data; data tampering; luring attacks</td>
+</tr>
+<tr>
+<td><em>Configuration management</em></td>
+<td>Unauthorized access to administration interfaces; unauthorized access to configuration stores; retrieval of clear text configuration data; lack of individual accountability; over-privileged process and service accounts</td>
+</tr>
+<tr>
+<td><em>Sensitive information</em></td>
+<td>Access sensitive code or data in storage; network eavesdropping; code/data tampering</td>
+</tr>
+<tr>
+<td><em>Session management</em></td>
+<td>Session hijacking; session replay; man in the middle</td>
+</tr>
+<tr>
+<td><em>Cryptography</em></td>
+<td>Poor key generation or key management; weak or custom encryption</td>
+</tr>
+<tr>
+<td><em>Parameter manipulation</em></td>
+<td>Query string manipulation; form field manipulation; cookie manipulation; HTTP header manipulation</td>
+</tr>
+<tr>
+<td><em>Exception management</em></td>
+<td>Information disclosure; denial of service</td>
+</tr>
+<tr>
+<td><em>Auditing and logging</em></td>
+<td>User denies performing an operation; attacker exploits an application without trace; attacker covers his or her tracks</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://en.wikipedia.org/wiki/Application_security" target="_blank">Application Security</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="language-based-security.html" class="navigation navigation-prev " aria-label="Previous page: Language-Based Security">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="owasp.html" class="navigation navigation-next " aria-label="Next page: OWASP Top 10">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Application Level Security","level":"1.4","depth":1,"next":{"title":"OWASP Top 10","level":"1.5","depth":1,"path":"docs/owasp.md","ref":"docs/owasp.md","articles":[{"title":"Injection","level":"1.5.1","depth":2,"path":"docs/injection.md","ref":"docs/injection.md","articles":[]},{"title":"Broken Authentication and Session Management","level":"1.5.2","depth":2,"path":"docs/broken-authentication-and-session-management.md","ref":"docs/broken-authentication-and-session-management.md","articles":[]},{"title":"Cross-Site Scripting (XSS)","level":"1.5.3","depth":2,"path":"docs/cross-site-scripting.md","ref":"docs/cross-site-scripting.md","articles":[]},{"title":"Broken Access Control","level":"1.5.4","depth":2,"path":"docs/broken-access-control.md","ref":"docs/broken-access-control.md","articles":[]},{"title":"Security Misconfiguration","level":"1.5.5","depth":2,"path":"docs/security-misconfiguration.md","ref":"docs/security-misconfiguration.md","articles":[]},{"title":"Sensitive Data Exposure","level":"1.5.6","depth":2,"path":"docs/sensitive-data-exposure.md","ref":"docs/sensitive-data-exposure.md","articles":[]},{"title":"Insufficient Attack Protection","level":"1.5.7","depth":2,"path":"docs/insufficient-attack-protection.md","ref":"docs/insufficient-attack-protection.md","articles":[]},{"title":"Cross-Site Request Forgery","level":"1.5.8","depth":2,"path":"docs/cross-site-request-forgery.md","ref":"docs/cross-site-request-forgery.md","articles":[]},{"title":"Using Components with Known Vulnerabilities","level":"1.5.9","depth":2,"path":"docs/using-components-with-known-vulnerabilities.md","ref":"docs/using-components-with-known-vulnerabilities.md","articles":[]},{"title":"Underprotected APIs","level":"1.5.10","depth":2,"path":"docs/underprotected-apis.md","ref":"docs/underprotected-apis.md","articles":[]}]},"previous":{"title":"Language-Based Security","level":"1.3","depth":1,"path":"docs/language-based-security.md","ref":"docs/language-based-security.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["flowchart"],"pluginsConfig":{"flowchart":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/application-level-security.md","mtime":"2019-08-17T18:12:52.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-17T18:17:29.051Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

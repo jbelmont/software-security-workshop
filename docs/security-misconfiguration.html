@@ -1,0 +1,499 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Security Misconfiguration · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="sensitive-data-exposure.html" />
+    
+    
+    <link rel="prev" href="broken-access-control.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="software-security.html">
+            
+                <a href="software-security.html">
+            
+                    
+                    Software Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="language-based-security.html">
+            
+                <a href="language-based-security.html">
+            
+                    
+                    Language-Based Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="application-level-security.html">
+            
+                <a href="application-level-security.html">
+            
+                    
+                    Application Level Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="owasp.html">
+            
+                <a href="owasp.html">
+            
+                    
+                    OWASP Top 10
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="injection.html">
+            
+                <a href="injection.html">
+            
+                    
+                    Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="broken-authentication-and-session-management.html">
+            
+                <a href="broken-authentication-and-session-management.html">
+            
+                    
+                    Broken Authentication and Session Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="cross-site-scripting.html">
+            
+                <a href="cross-site-scripting.html">
+            
+                    
+                    Cross-Site Scripting (XSS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="broken-access-control.html">
+            
+                <a href="broken-access-control.html">
+            
+                    
+                    Broken Access Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.5" data-path="security-misconfiguration.html">
+            
+                <a href="security-misconfiguration.html">
+            
+                    
+                    Security Misconfiguration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="sensitive-data-exposure.html">
+            
+                <a href="sensitive-data-exposure.html">
+            
+                    
+                    Sensitive Data Exposure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="insufficient-attack-protection.html">
+            
+                <a href="insufficient-attack-protection.html">
+            
+                    
+                    Insufficient Attack Protection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="cross-site-request-forgery.html">
+            
+                <a href="cross-site-request-forgery.html">
+            
+                    
+                    Cross-Site Request Forgery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="using-components-with-known-vulnerabilities.html">
+            
+                <a href="using-components-with-known-vulnerabilities.html">
+            
+                    
+                    Using Components with Known Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="underprotected-apis.html">
+            
+                <a href="underprotected-apis.html">
+            
+                    
+                    Underprotected APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="application_demo.html">
+            
+                <a href="application_demo.html">
+            
+                    
+                    Application Demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Security Misconfiguration</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="security-misconfiguration">Security Misconfiguration</h1>
+<blockquote>
+<p>Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure. Additionally, software should be kept up to date.</p>
+</blockquote>
+<p><div xmlns="http://www.w3.org/1999/xhtml" class="flowchart"><svg height="35.72947681837516px" version="1.1" width="750px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 936.7265625 44.625" preserveaspectratio="xMidYMid meet" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Rapha&#xEB;l 2.1.4</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><marker id="raphael-marker-endblock33-obj10" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj11" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj12" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj13" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker></defs><a xlink:href="https://en.wikipedia.org/wiki/Threat_(computer)" xmlns:xlink="http://www.w3.org/1999/xlink" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><rect x="0" y="0" width="107.84375" height="35.625" rx="20" ry="20" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="st" transform="matrix(1,0,0,1,29.3359,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></a><a xlink:href="https://en.wikipedia.org/wiki/Threat_(computer)" xmlns:xlink="http://www.w3.org/1999/xlink" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="stt" class="flowchartt" transform="matrix(1,0,0,1,29.3359,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Threat Agents</tspan></text></a><rect x="0" y="0" width="110.15625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op1" transform="matrix(1,0,0,1,215.3594,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op1t" class="flowchartt" transform="matrix(1,0,0,1,215.3594,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack Vectors</tspan></text><rect x="0" y="0" width="154.515625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op2" transform="matrix(1,0,0,1,381.5156,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op2t" class="flowchartt" transform="matrix(1,0,0,1,381.5156,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Security Weaknesses</tspan></text><rect x="0" y="0" width="132.734375" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op3" transform="matrix(1,0,0,1,602.9219,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op3t" class="flowchartt" transform="matrix(1,0,0,1,602.9219,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Technical Impacts</tspan></text><rect x="0" y="0" width="129.625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op4" transform="matrix(1,0,0,1,804.1016,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op4t" class="flowchartt" transform="matrix(1,0,0,1,804.1016,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Business Impacts</tspan></text><path fill="none" stroke="#000000" d="M137.1796875,23.8125C137.1796875,23.8125,194.23051120294258,23.8125,210.86104916713043,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj10)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M325.515625,23.8125C325.515625,23.8125,363.71639585494995,23.8125,377.01578531763516,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj11)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M536.03125,23.8125C536.03125,23.8125,583.4314170479774,23.8125,598.4291261530016,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj12)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M735.65625,23.8125C735.65625,23.8125,784.383430480957,23.8125,799.6106743812561,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj13)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></svg></div></p>
+<table>
+<thead>
+<tr>
+<th>Threat Agents </th><td>Attack Vectors</td><td colspan="2">Security Weakness</td><td>Technical Impacts</td><td>Business Impacts</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application Specific</td>
+<td>Exploitability =&gt; Easy</td>
+<td>Prevalence =&gt; Common</td>
+<td>Detectability =&gt; Average</td>
+<td>Impact =&gt; Severe</td>
+<td>App/Business Specific</td>
+</tr>
+<tr>
+<td>Consider anonymous external attackers as well as authorized users that may attempt to compromise the system. Also consider insiders wanting to disguise their actions.</td>
+<td>Attackersaccess default accounts, unused pages, unpatched flaws, unprotected files and directories, etc. to gain unauthorized access to or knowledge of the system. </td><td colspan="2">Security misconfiguration can happen at any level of an application stack, including the platform, web server, application server, database, frameworks, and custom code. Developers and system administrators need to work together to ensure that the entire stack is configured properly. Automated scanners are useful for detecting missing patches, misconfigurations, use of default accounts, unnecessary services, etc.</td> <td>Such flaws frequently give attackers unauthorized access to some system data or functionality. Occasionally, such flaws result in a complete system compromise.</td><td>The system could be completely compromised without you knowing it. All of your data could be stolen or modified slowly over time. Recovery costs could be expensive.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detecting-vulnerability">Detecting Vulnerability</h2>
+<p>Is your application missing the proper security hardening across any part of the application stack? Including:</p>
+<ol>
+<li>Is any of your software out of date? This software includes the OS, Web/App Server, DBMS, applications, APIs, and all components and libraries.</li>
+<li>Are any unnecessary features enabled or installed (e.g., ports, services, pages, accounts, privileges)?</li>
+<li>Are default accounts and their passwords still enabled and unchanged?</li>
+<li>Does your error handling reveal stack traces or other overly informative error messages to users?</li>
+<li>Are the security settings in your application servers, application frameworks (e.g., Struts, Spring, ASP.NET), libraries, databases, etc. not set to secure values? Without a concerted, repeatable application security configuration process, systems are at a higher risk.</li>
+</ol>
+<h2 id="preventing-vulnerability">Preventing Vulnerability</h2>
+<p>The primary recommendations are to establish all of the following:</p>
+<ol>
+<li>A repeatable hardening process that makes it fast and easy to deploy another environment that is properly locked down.<ol>
+<li>Development, QA, and production environments should all be configured identically (with different passwords used in each environment).</li>
+<li>This process should be automated to minimize the effort required to setup a new secure environment.</li>
+</ol>
+</li>
+<li>A process for keeping abreast of and deploying all new software updates and patches in a timely manner to each deployed environment. This process needs to include all components and libraries as well.</li>
+<li>A strong application architecture that provides effective, secure separation between components.</li>
+<li>An automated process to verify that configurations and settings are properly configured in all environments.</li>
+</ol>
+<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
+<ol>
+<li>The app server admin console is automatically installed and not removed. Default accounts aren&#x2019;t changed.<ol>
+<li>Attacker discovers the standard admin pages are on your server, logs in with default passwords, and takes over.</li>
+</ol>
+</li>
+<li>Directory listing is not disabled on your web server.<ol>
+<li>An attacker discovers they can simply list directories to find any file.</li>
+<li>The attacker finds and downloads all your compiled Java classes, which they decompile and reverse engineer to get all your custom code.</li>
+<li>Attacker then finds a serious access control flaw in your application.</li>
+</ol>
+</li>
+<li>App server configuration allows stack traces to be returned to users, potentially exposing underlying flaws such as framework versions that are known to be vulnerable.</li>
+<li>App server comes with sample applications that are not removed from your production server.<ol>
+<li>These sample applications have well known security flaws attackers can use to compromise your server</li>
+</ol>
+</li>
+</ol>
+<h2 id="references">References</h2>
+<p><a href="https://www.owasp.org/index.php/Configuration" target="_blank">Configuration</a></p>
+<p><a href="https://www.owasp.org/index.php/Error_Handling" target="_blank">Error Handling</a></p>
+<p><a href="https://www.owasp.org/index.php/Testing_for_configuration_management" target="_blank">Testing for Configuration Management</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="broken-access-control.html" class="navigation navigation-prev " aria-label="Previous page: Broken Access Control">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="sensitive-data-exposure.html" class="navigation navigation-next " aria-label="Next page: Sensitive Data Exposure">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Security Misconfiguration","level":"1.5.5","depth":2,"next":{"title":"Sensitive Data Exposure","level":"1.5.6","depth":2,"path":"docs/sensitive-data-exposure.md","ref":"docs/sensitive-data-exposure.md","articles":[]},"previous":{"title":"Broken Access Control","level":"1.5.4","depth":2,"path":"docs/broken-access-control.md","ref":"docs/broken-access-control.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["flowchart"],"pluginsConfig":{"flowchart":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/security-misconfiguration.md","mtime":"2019-08-17T18:12:52.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-17T18:17:29.051Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

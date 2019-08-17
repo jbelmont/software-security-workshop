@@ -1,0 +1,502 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Underprotected APIs · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="application_demo.html" />
+    
+    
+    <link rel="prev" href="using-components-with-known-vulnerabilities.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="software-security.html">
+            
+                <a href="software-security.html">
+            
+                    
+                    Software Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="language-based-security.html">
+            
+                <a href="language-based-security.html">
+            
+                    
+                    Language-Based Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="application-level-security.html">
+            
+                <a href="application-level-security.html">
+            
+                    
+                    Application Level Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="owasp.html">
+            
+                <a href="owasp.html">
+            
+                    
+                    OWASP Top 10
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="injection.html">
+            
+                <a href="injection.html">
+            
+                    
+                    Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="broken-authentication-and-session-management.html">
+            
+                <a href="broken-authentication-and-session-management.html">
+            
+                    
+                    Broken Authentication and Session Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="cross-site-scripting.html">
+            
+                <a href="cross-site-scripting.html">
+            
+                    
+                    Cross-Site Scripting (XSS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="broken-access-control.html">
+            
+                <a href="broken-access-control.html">
+            
+                    
+                    Broken Access Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="security-misconfiguration.html">
+            
+                <a href="security-misconfiguration.html">
+            
+                    
+                    Security Misconfiguration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="sensitive-data-exposure.html">
+            
+                <a href="sensitive-data-exposure.html">
+            
+                    
+                    Sensitive Data Exposure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="insufficient-attack-protection.html">
+            
+                <a href="insufficient-attack-protection.html">
+            
+                    
+                    Insufficient Attack Protection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="cross-site-request-forgery.html">
+            
+                <a href="cross-site-request-forgery.html">
+            
+                    
+                    Cross-Site Request Forgery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="using-components-with-known-vulnerabilities.html">
+            
+                <a href="using-components-with-known-vulnerabilities.html">
+            
+                    
+                    Using Components with Known Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.10" data-path="underprotected-apis.html">
+            
+                <a href="underprotected-apis.html">
+            
+                    
+                    Underprotected APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="application_demo.html">
+            
+                <a href="application_demo.html">
+            
+                    
+                    Application Demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Underprotected APIs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="underprotected-apis">Underprotected Apis</h1>
+<blockquote>
+<p>Modern applications often involve rich client applications and APIs, such as JavaScript in the browser and mobile apps, that connect to an API of some kind (SOAP/XML, REST/JSON, RPC, GWT, etc.). These APIs are often unprotected and contain numerous vulnerabilities.</p>
+</blockquote>
+<p><div xmlns="http://www.w3.org/1999/xhtml" class="flowchart"><svg height="35.72947681837516px" version="1.1" width="750px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 936.7265625 44.625" preserveaspectratio="xMidYMid meet" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Rapha&#xEB;l 2.1.4</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><marker id="raphael-marker-endblock33-obj10" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj11" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj12" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker><marker id="raphael-marker-endblock33-obj13" markerheight="3" markerwidth="3" orient="auto" refx="1.5" refy="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></marker></defs><a xlink:href="https://en.wikipedia.org/wiki/Threat_(computer)" xmlns:xlink="http://www.w3.org/1999/xlink" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><rect x="0" y="0" width="107.84375" height="35.625" rx="20" ry="20" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="st" transform="matrix(1,0,0,1,29.3359,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></a><a xlink:href="https://en.wikipedia.org/wiki/Threat_(computer)" xmlns:xlink="http://www.w3.org/1999/xlink" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="stt" class="flowchartt" transform="matrix(1,0,0,1,29.3359,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Threat Agents</tspan></text></a><rect x="0" y="0" width="110.15625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op1" transform="matrix(1,0,0,1,215.3594,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op1t" class="flowchartt" transform="matrix(1,0,0,1,215.3594,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack Vectors</tspan></text><rect x="0" y="0" width="154.515625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op2" transform="matrix(1,0,0,1,381.5156,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op2t" class="flowchartt" transform="matrix(1,0,0,1,381.5156,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Security Weaknesses</tspan></text><rect x="0" y="0" width="132.734375" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op3" transform="matrix(1,0,0,1,602.9219,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op3t" class="flowchartt" transform="matrix(1,0,0,1,602.9219,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Technical Impacts</tspan></text><rect x="0" y="0" width="129.625" height="35.625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op4" transform="matrix(1,0,0,1,804.1016,6)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><text x="10" y="17.8125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op4t" class="flowchartt" transform="matrix(1,0,0,1,804.1016,6)" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Business Impacts</tspan></text><path fill="none" stroke="#000000" d="M137.1796875,23.8125C137.1796875,23.8125,194.23051120294258,23.8125,210.86104916713043,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj10)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M325.515625,23.8125C325.515625,23.8125,363.71639585494995,23.8125,377.01578531763516,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj11)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M536.03125,23.8125C536.03125,23.8125,583.4314170479774,23.8125,598.4291261530016,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj12)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/><path fill="none" stroke="#000000" d="M735.65625,23.8125C735.65625,23.8125,784.383430480957,23.8125,799.6106743812561,23.8125" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj13)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"/></svg></div></p>
+<table>
+<thead>
+<tr>
+<th>Threat Agents </th><td>Attack Vectors</td><td colspan="2">Security Weakness</td><td>Technical Impacts</td><td>Business Impacts</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application Specific</td>
+<td>Exploitability =&gt; Easy</td>
+<td>Prevalence =&gt; Common</td>
+<td>Detectability =&gt; Average</td>
+<td>Impact =&gt; Severe</td>
+<td>App/Business Specific</td>
+</tr>
+<tr>
+<td>Consider anyone with the ability to send requests to your APIs. Client software is easily reversed and communications are easily intercepted, so obscurity is no defense for APIs.</td>
+<td>Attackers can reverse engineer APIs by examining client code, or simply monitoring communications. Some API vulnerabilities can be automatically discovered, others only by experts. </td><td colspan="2">Modern web applications and APIs are increasingly composed of rich clients (browser, mobile, desktop) that connect to backend APIs (XML, JSON, RPC, GWT, custom). APIs (microservices, services, endpoints) can be vulnerable to the full range of attacks. Unfortunately, dynamic and sometimes even static tools don&#x2019;t work well on APIs, and they can be difficult to analyze manually, so these vulnerabilities are often undiscovered.</td> <td>The full range of negative outcomes is possible, including data theft, corruption, and destruction; unauthorized access to the entire application; and complete host takeover.</td><td>Consider the impact of an API attack on the business. Does the API access critical data or functions? Many APIs are mission critical, so also consider the impact of denial of service attacks.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detecting-vulnerability">Detecting Vulnerability</h2>
+<ul>
+<li>Testing your APIs for vulnerabilities should be similar to testing the rest of your application for vulnerabilities.<ul>
+<li>All the different types of injection, authentication, access control, encryption, configuration, and other issues can exist in APIs just as in a traditional application.</li>
+</ul>
+</li>
+<li>However, because APIs are designed for use by programs (not humans) they frequently lack a UI and also use complex protocols and complex data structures.<ul>
+<li>These factors can make security testing difficult.</li>
+<li>The use of widely-used formats can help, such as Swagger (OpenAPI), REST, JSON, and XML.</li>
+<li>Some frameworks like GWT and some RPC implementations use custom formats.</li>
+<li>Some applications and APIs create their own protocol and data formats, like WebSockets.</li>
+<li>The breadth and complexity of APIs make it difficult to automate effective security testing, possibly leading to a false sense of security.</li>
+</ul>
+</li>
+<li>Ultimately, knowing if your APIs are secure means carefully choosing a strategy to test all defenses that matter.</li>
+</ul>
+<h2 id="preventing-vulnerability">Preventing Vulnerability</h2>
+<ul>
+<li>The key to protecting APIs is to ensure that you fully understand the threat model and what defenses you have<ul>
+<li>Ensure that you have secured communications between the client and your APIs.</li>
+<li>Ensure that you have a strong authentication scheme for your APIs, and that all credentials, keys, and tokens have been secured.</li>
+<li>Ensure that whatever data format your requests use, that the parser configuration is hardened against attack.</li>
+<li>Implement an access control scheme that protects APIs from being improperly invoked, including unauthorized function and data references.</li>
+<li>Protect against injection of all forms, as these attacks are just as viable through APIs as they are for normal apps.</li>
+<li>Be sure your security analysis and testing covers all your APIs and your tools can discover and analyze them all effectively.</li>
+</ul>
+</li>
+</ul>
+<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
+<ol>
+<li>Imagine a mobile banking app that connects to an XML API at the bank for account information and performing transactions.<ol>
+<li>The attacker reverse engineers the app and discovers that the user account number is passed as part of the authentication request to the server along with the username and password.</li>
+<li>The attacker sends legitimate credentials, but another user&#x2019;s account number, gaining full access to the other user&#x2019;s account.</li>
+</ol>
+</li>
+<li>Imagine a public API offered by an Internet startup for automatically sending text messages.<ol>
+<li>The API accepts JSON messages that contain a &quot;transactionid&quot; field.</li>
+<li>The API parses out this &quot;transactionid&quot; value as a string and concatenates it into a SQL query, without escaping or parameterizing it.</li>
+<li>As you can see the API is just as susceptible to SQL injection as any other type of application.</li>
+<li>In either of these cases, the vendor may not provide a web UI to use these services, making security testing more difficult.</li>
+</ol>
+</li>
+</ol>
+<h2 id="references">References</h2>
+<p><a href="https://www.owasp.org/index.php/REST_Security_Cheat_Sheet" target="_blank">Rest Security Cheat Sheet</a></p>
+<p><a href="https://www.owasp.org/index.php/Web_Service_Security_Cheat_Sheet" target="_blank">Web Service Security Cheat Sheet</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="using-components-with-known-vulnerabilities.html" class="navigation navigation-prev " aria-label="Previous page: Using Components with Known Vulnerabilities">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="application_demo.html" class="navigation navigation-next " aria-label="Next page: Application Demo">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Underprotected APIs","level":"1.5.10","depth":2,"next":{"title":"Application Demo","level":"1.6","depth":1,"path":"docs/application_demo.md","ref":"docs/application_demo.md","articles":[]},"previous":{"title":"Using Components with Known Vulnerabilities","level":"1.5.9","depth":2,"path":"docs/using-components-with-known-vulnerabilities.md","ref":"docs/using-components-with-known-vulnerabilities.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["flowchart"],"pluginsConfig":{"flowchart":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/underprotected-apis.md","mtime":"2019-08-17T18:12:52.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-17T18:17:29.051Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
