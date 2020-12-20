@@ -5,4 +5,4 @@
 
 A look at Software security and specifically the OWASP top 10
 
-[Software Security Gitbook](https://jbelmont.github.io/software-security/)
+[Software Security Gitbook](https://marcelbelmont.com/software-security-workshop)
